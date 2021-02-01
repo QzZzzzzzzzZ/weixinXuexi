@@ -1,0 +1,6 @@
+/**index.wxss**/
+.content{
+  font-size: 14px; 
+  background-color: pink;
+  height: 100%;
+}
