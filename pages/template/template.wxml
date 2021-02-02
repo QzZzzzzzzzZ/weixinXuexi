@@ -1,0 +1,21 @@
+<!-- template 创建模版 name 定义名称 -->
+<template name="template">
+  <!-- 使用传递的数据 -->
+  <!-- block  for循环可以创建一个或者多个组件 -->
+  <block wx:for="{{array}}">
+    <view class="item" id="0">
+      <image src="{{item.img}}" style="width:150rpx;height:106rpx;"></image>
+    </view>
+    <!-- 文字描述 -->
+    <view class="desc">
+      <view class="title">{{item.title}}</view>
+      <view class="count">
+        <view>{{item.type}}</view>
+        <view class="liulan">{{item.liulan}}</view>
+        <view class="pinglun">{{item.pinglun}}</view>
+      </view>
+    </view>
+    <!--  分割线 -->
+    <view class="hr2"></view>
+  </block>
+</template>

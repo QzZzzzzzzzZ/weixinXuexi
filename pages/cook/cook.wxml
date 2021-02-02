@@ -1,0 +1,51 @@
+<!--pages/cook/cook.wxml-->
+<view class="content">
+
+<!-- 橱窗：轮播图 -->
+<view class="img">
+  <image src="../../images/haibao/haibao.png" style="width:100%;height230rpx;"></image>
+</view>
+
+<!-- 九宫格导航 -->
+<view class="nav">
+  <view class="nav-item">
+    <view><image src="../../images/icon/fenlei.png"></image></view>
+    <view>菜谱分类</view>
+  </view>
+
+  <view class="nav-item">
+    <view><image src="../../images/icon/shipin.png"></image></view>
+    <view>视频</view>
+  </view>
+
+  <view class="nav-item">
+    <view><image src="../../images/icon/meishi.png"></image></view>
+    <view>美食</view>
+  </view>
+
+  <view class="nav-item">
+    <view><image src="../../images/icon/shangou.png"></image></view>
+    <view>闪购</view>
+  </view>
+
+</view>
+
+<!-- 分割线 -->
+<view class="hr"></view>
+
+<!-- 内容 -->
+<!-- 头部 -->
+<view class="head">
+  <view>香哈头条</view>
+  <view class="right">></view>
+</view>
+
+<!-- 身体 -->
+<!-- import 根据模版路径导入 -->
+<import src="../template/template.wxml"></import>
+<view class="list">
+  <!-- template 引用模版 is 引用哪一个 data 传递数据 -->
+  <template is="template" data="{{array}}"></template>
+</view>
+
+</view>
